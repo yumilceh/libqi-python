@@ -1,6 +1,23 @@
-NOTE : On windows qimessaging MUST be compiled in release mode (qibuild --release)
+This is a recipe to compile aldebaran's libqi-python in Ubuntu 16.04 LTS for proyects in YASYT robotics. 
 
-1 - _qi.so is generated with boost.python in build/sdk/lib
+For more information see: http://github.com/aldebaran/libqi-python
 
-2 - For easy testing, use :
-PYTHONPATH=/home/foo/worktree/lib/qi/messaging/python/:/home/foo/worktree/lib/qi/messaging/build/sdk/lib/ python2 $@
+Recipe
+-----------
+
+First you should build libqi, preferable according to https://github.com/yumilceh/libqi. Then build libqi-python:
+
+.. code-block:: sh
+  git clone https://github.com/yumilceh/libqi-python.git
+  cd libqi-python
+  mkdir BUILD & cd BUILD
+  cmake .. -DQI_WITH_TESTS=OFF -DCMAKE_PREFIX_PATH=~/pepper_ws/libqi/BUILD/output -DCMAKE_CXX_FLAGS:STRING=-std=gnu++0x
+  make
+
+The library is in
+
+Links
+-----
+
+git repository:
+http://github.com/aldebaran/libqi
