@@ -1,0 +1,2 @@
+# Hashes of file build rules.
+92d52a365250c0f55fbb39e1584e3d4b python2/CMakeFiles/copy-python-qi
