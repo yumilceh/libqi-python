@@ -8,6 +8,7 @@ Recipe
 First you should build libqi, preferable according to https://github.com/yumilceh/libqi. Then build libqi-python:
 
 .. code-block:: sh
+
   git clone https://github.com/yumilceh/libqi-python.git
   cd libqi-python
   mkdir BUILD & cd BUILD
