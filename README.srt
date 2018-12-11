@@ -14,7 +14,7 @@ First you should build libqi, preferable according to https://github.com/yumilce
   cmake .. -DQI_WITH_TESTS=OFF -DCMAKE_PREFIX_PATH=~/pepper_ws/libqi/BUILD/output -DCMAKE_CXX_FLAGS:STRING=-std=gnu++0x
   make
 
-The library is in
+The library is in .....<PATH_TO_LIBQI_PYTHON>/BUILD/sdk/lib/python2.7/site-packages/_qi.so
 
 Links
 -----
